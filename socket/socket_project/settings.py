@@ -137,4 +137,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'raresalexandru97@gmail.com'
-EMAIL_HOST_PASSWORD = 'Dark$kater97'
+EMAIL_HOST_PASSWORD = ''

@@ -47,6 +47,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 	model = Post
 	fields = ['title', 'content']
+	success_url = '/'
 
 	def form_valid(self, form):
 		form.instance.author = self.request.user
@@ -70,3 +71,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
 	return render(request, 'socketX1/about.html', {'title': 'About'})
+	
+
+def societies(request):
+	return render(request, 'socketX1/societies.html', {'title': 'Societies'})
